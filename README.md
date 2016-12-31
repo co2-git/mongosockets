@@ -25,4 +25,5 @@ class User extends Model {
 }
 
 // Connect to a mongosockets server
+await maeva.connect(connect('ws://localhost:'));
 ```
