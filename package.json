@@ -1,5 +1,5 @@
 {
-  "name": "maeva-sockets-mongodb",
+  "name": "mongosockets",
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -36,6 +36,7 @@
     "maeva": "^2.6.5",
     "maeva-mongodb": "^2.0.0",
     "moment": "^2.17.1",
+    "uuid": "^3.0.1",
     "ws": "^1.1.1"
   }
 }
