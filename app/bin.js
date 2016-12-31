@@ -2,7 +2,7 @@ import {Server as WSServer} from 'ws';
 import Server from './Server';
 import log from './log';
 
-const PORT = process.env.PORT || 3333;
+const PORT = process.argv[2] || process.env.PORT || 8080;
 
 log.info('Starting new MotherShip', {PORT});
 

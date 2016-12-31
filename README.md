@@ -10,7 +10,13 @@ npm install mongosockets
 # Usage (server)
 
 ```bash
-npm start
+npm start 3000
+```
+
+# Start new worker on port 9000
+
+```bash
+npm run worker 9000 mongodb://localhost/test
 ```
 
 # Usage (client)
@@ -25,5 +31,8 @@ class User extends Model {
 }
 
 // Connect to a mongosockets server
-await maeva.connect(connect('ws://localhost:'));
+await maeva.connect(connect('ws://localhost:9000'));
+
+// Perform queries
+const users = await User.find();
 ```
