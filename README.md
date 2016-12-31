@@ -34,5 +34,5 @@ class User extends Model {
 await maeva.connect(connect('ws://localhost:9000'));
 
 // Perform queries
-const users = await User.find();
+await User.insert({email: 'john@doe.com'});
 ```
